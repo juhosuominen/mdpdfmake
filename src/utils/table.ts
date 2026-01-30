@@ -71,7 +71,12 @@ export const pdfMakeTable = async (
       widths: Array(token.header.length).fill("auto"),
       body: tableBody,
     },
-    layout: "lightHorizontalLines",
+    layout: {
+      hLineWidth: () => 1,
+      vLineWidth: () => 1,
+      hLineColor: () => "#cccccc",
+      vLineColor: () => "#cccccc",
+    },
     margin: [0, 5, 0, 5],
   };
 
