@@ -23,7 +23,8 @@
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run lint && npm run build"
+    "prepublishOnly": "npm run lint && npm run build",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
