@@ -1,4 +1,4 @@
-import { Tokens } from "Tokens";
+import { Tokens } from "marked";
 import { globalOptions } from "../index";
 
 export const pdfMakeHeading = (

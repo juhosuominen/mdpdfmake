@@ -1,4 +1,4 @@
-import { Tokens } from "Tokens";
+import { Tokens } from "marked";
 import { pdfMakeImage } from "./image";
 import { pdfMakeText } from "./text";
 import { pdfMakeCodeblock } from "./codeblock";

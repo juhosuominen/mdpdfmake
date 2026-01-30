@@ -21,24 +21,26 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run lint && npm run build"
   },
   "devDependencies": {
-    "@types/pdfmake": "^0.2.8",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
-    "eslint": "^8.51.0",
-    "nodemon": "^3.0.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "@eslint/js": "^9.39.2",
+    "@types/pdfmake": "^0.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.39.2",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
   },
   "dependencies": {
-    "axios": "^1.5.1",
+    "axios": "^1.13.4",
     "image-to-base64": "^2.2.0",
-    "marked": "^9.1.2",
-    "pdfmake": "^0.2.8"
+    "marked": "^17.0.1",
+    "pdfmake": "^0.3.3"
   },
   "bugs": {
     "url": "https://github.com/hackerbone/mdpdfmake/issues"

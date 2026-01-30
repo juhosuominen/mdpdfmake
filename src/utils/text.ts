@@ -1,4 +1,4 @@
-import { Tokens } from "Tokens";
+import { Tokens } from "marked";
 import { pdfMakeCodeblock } from "./codeblock";
 
 export const pdfMakeText = async (

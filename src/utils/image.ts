@@ -1,4 +1,4 @@
-import { Tokens } from "Tokens";
+import { Tokens } from "marked";
 import axios from "axios";
 import imageToBase64 from "image-to-base64";
 
@@ -28,7 +28,7 @@ export const pdfMakeImage = async (
       content.push({ image: dataUrl, width: 150, margin: [0, 5, 0, 5] });
 
     return { image: dataUrl, width: 150, margin: [0, 5, 0, 5] };
-  } catch (err) {
+  } catch {
     console.warn("Image not found: " + token.href, ", reverting to text.");
     return {
       text: `[Image: ${token.href}]`,

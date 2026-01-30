@@ -1,4 +1,4 @@
-import { Tokens } from "Tokens";
+import { Tokens } from "marked";
 
 export const pdfMakeHR = async (
   token: Tokens.Hr | Tokens.Generic,
